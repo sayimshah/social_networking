@@ -1,0 +1,22 @@
+services:
+  web:
+    build: .
+    command: python manage.py runserver 0.0.0.0:8000
+    volumes:
+      - .:/code
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+#if needed in this project i am using SQLite Only
+  db:
+    image: postgres:latest
+    environment:
+      POSTGRES_DB: 'your_db_name'
+      POSTGRES_USER: 'your_db_user'
+      POSTGRES_PASSWORD: 'your_db_password'
+    ports:
+      - "5432:5432"
+
+volumes:
+  postgres_data:
