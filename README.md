@@ -4,7 +4,7 @@ Prerequisites
 Python: Ensure Python is installed on your system. You can download and install Python from the official website.
 Steps
 Clone Repository: Clone the repository containing your Django project to your local machine.
-git clone <repository_url>
+git clone https://github.com/sayimshah/social_networking.git
 
 Navigate to Project Directory: Change directory to your project directory.
 
@@ -27,3 +27,6 @@ python manage.py runserver
 
 Postman API collection link 
 https://documenter.getpostman.com/view/20269822/2sA3Qv7Adh
+
+
+
